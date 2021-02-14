@@ -1,0 +1,35 @@
+const s = "javascriptloops";
+function vowelsAndConsonants(s) {
+    const allLetters = s.split('');
+    const vowels = [];
+    const notVowels = [];
+    for (let letter of allLetters) {
+        switch (letter) {
+            case 'o':
+                vowels.push(letter);
+                break;
+            case 'a':
+                vowels.push(letter);
+                break;
+            case 'e':
+                vowels.push(letter);
+                break;
+            case 'i':
+                vowels.push(letter);
+                break;
+            case 'u':
+                vowels.push(letter);
+                break
+            default:
+                notVowels.push(letter);
+        }
+    }
+    for (let vowel of vowels) {
+        console.log(vowel)
+    }
+    for (let notVowel of notVowels) {
+        console.log(notVowel)
+    }
+
+}
+vowelsAndConsonants(s);
